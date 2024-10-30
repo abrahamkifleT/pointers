@@ -4,7 +4,9 @@ import "fmt"
 
 func main() {
 	age := 26 //regular varibale
-	fmt.Println("Age: ", age)
+
+	agePointer := &age
+	fmt.Println("Age: ", *agePointer)
 
 	adultYears := getAdultYears(age)
 	fmt.Println(adultYears)
